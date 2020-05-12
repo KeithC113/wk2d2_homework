@@ -6,11 +6,25 @@ require_relative('../river.rb')
 require_relative('../fish.rb')
 require_relative('../bear.rb')
 
-class BusTest < MiniTest::Test
+class RiverTest < MiniTest::Test
 
   def setup()
-    @bus = Bus.new(22, "Ocean Terminal")
-    @passenger1 = Person.new("John", 30)
-    @passenger2 = Person.new("Mary", 63)
-    @passenger3 = Person.new("Bob", 40)
+    @river = River.new("Amazon")
+    @fish1 = Fish.new("Tom")
+    @fish2 = Fish.new("Dick")
+    @fish3 = Fish.new("Harry")
   end
+
+# => 1
+  def test_can_create_river
+    assert_equal(River,@river.class)
+  end
+
+# => 2
+  def test_river_name
+    assert_equal("Amazon",@river.name)
+  end
+
+
+
+end
