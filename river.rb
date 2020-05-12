@@ -4,7 +4,15 @@ class River
 
     def initialize(name)
       @name = name
-      @fish = []
+      @fish = [@fish1]
+    end
+
+    def number_of_fish_in_river
+      return @fish.count
+    end
+
+    def add_fish_to_river(fish)
+      return @fish.push(fish)
     end
 
 end

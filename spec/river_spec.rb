@@ -25,6 +25,20 @@ class RiverTest < MiniTest::Test
     assert_equal("Amazon",@river.name)
   end
 
+# => 3
+  def test_number_of_fish_in_river
+    assert_equal(1,@river.number_of_fish_in_river)
+  end
 
+# =>4
+  def test_add_fish_to_river
+    @river.add_fish_to_river(@fish2)
+    assert_equal(2,@river.number_of_fish_in_river)
+  end
+
+# => 5
+  def test_fish_eaten_from_river
+    assert_equal(1,@river.number_of_fish_in_river)
+  end
 
 end
