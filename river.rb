@@ -15,4 +15,7 @@ class River
       return @fish.push(fish)
     end
 
+    def fish_eaten_from_river(fish)
+      return @fish.delete(fish)
+    end
 end

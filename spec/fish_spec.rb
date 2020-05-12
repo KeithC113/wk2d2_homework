@@ -12,8 +12,6 @@ class FishTest < MiniTest::Test
     @fish3 = Fish.new("Harry")
   end
   
-# =>  Only two tests in here
-
 # => 1
   def test_can_create_fish()
     assert_equal(Fish, @fish1.class())
